@@ -61,6 +61,8 @@ ul {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* заголовки*/
@@ -246,6 +248,9 @@ ul {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button .primary:hover,
@@ -377,11 +382,17 @@ ul {
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
+}
+
+.social-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover .social-icon,
@@ -421,8 +432,13 @@ ul {
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.logo-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .logo-link:hover .logo-icon,
 .logo-link:focus .logo-icon {
   fill: var(--accent-color);
@@ -467,12 +483,16 @@ ul {
   color: var(--text-white-color);
   text-decoration: none;
   font-style: normal;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-address:hover,
@@ -523,6 +543,10 @@ ul {
 
   padding: 6px 22px;
   border: transparent;
+  transition: box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button .secondary:hover,
@@ -583,6 +607,10 @@ ul {
   margin-top: var(--card-set-marg);
 }
 
+.card-set:hover .text-overlay {
+  transform: translate(0);
+}
+
 .link-portfolio:hover,
 .link-portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -592,6 +620,8 @@ ul {
   display: block;
   text-decoration: none;
   color: var(--basic-text-color);
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-bottom {
@@ -599,4 +629,24 @@ ul {
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+}
+
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-overlay {
+  position: absolute;
+
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--text-white-color);
+  background-color: var(--accent-color);
+  top: 0;
+  height: 100%;
+  padding: 63px 24px;
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

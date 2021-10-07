@@ -45,7 +45,7 @@
         <section class="hero">
             <div class="container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="button primary">Заказать услугу</button>
+            <button type="button" class="button primary" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -55,6 +55,7 @@
             <h2 class="section-title visually-hidden">Особенности</h2>
             <ul class="feature-items">
                 <li class="feature-content">
+
                     <div class="icons-item">
                     <svg class="feature-icon" width="65" height="70">
                         <use href="./images/icons.svg#icon-antenna-1"></use>
@@ -62,6 +63,7 @@
                     </div>
                     <h3 class="title">Внимание к деталям</h3>
                     <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                   
                 </li>
 
                 <li class="feature-content">
@@ -375,7 +377,12 @@
         </div>
         </div>
     </footer>
- 
+ <div class="backdrop is-hidden" data-modal>
+<div class="modal">
+ <button type="button" class="btn" data-modal-close></button>
+ </div>
+</div>
+<script src="./js/modal.js"></script>
 
 </body>
 

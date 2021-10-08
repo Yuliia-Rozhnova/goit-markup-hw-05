@@ -197,23 +197,8 @@ ul {
   align-items: center;
 
   color: var(--basic-text-color);
-}
 
-.auth-nav .link::after {
-  position: absolute;
-  display: block;
-  content: '';
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  bottom: -5px;
-  opacity: 0;
-
-  transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.auth-nav .link:hover::after {
-  opacity: 1;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav .link:hover,
@@ -234,11 +219,15 @@ ul {
 .icon-envelop {
   fill: var(--basic-text-color);
   margin-right: 10px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-smart {
   fill: var(--basic-text-color);
   margin-right: 10px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* герой */
@@ -316,6 +305,12 @@ ul {
   margin-bottom: 30px;
   background-color: var(--secondary-bg-color);
   border-radius: 4px;
+  border: 1px solid transparent;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icons-item:hover {
+  border: 1px solid var(--accent-color);
 }
 
 .feature-icon {
@@ -324,6 +319,7 @@ ul {
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .feature-icon:hover {
   fill: var(--accent-color);
 }
@@ -463,6 +459,8 @@ ul {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-link {
@@ -473,19 +471,18 @@ ul {
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
-
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .logo-link:hover .logo-icon,
 .logo-link:focus .logo-icon {
   fill: var(--accent-color);
 }
 
-.logo-link:hover,
+.logo-item:hover,
 .logo-link:focus {
   border: 1px solid var(--accent-color);
 }
@@ -571,7 +568,6 @@ ul {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
-  top: 221px;
 
   display: flex;
   justify-content: center;
@@ -586,7 +582,7 @@ ul {
   pointer-events: none;
 }
 .backdrop.is-hidden .modal {
-  transform: translate(50px) rotate(180deg);
+  transform: translate(50px) rotate(90deg);
 }
 
 .modal {

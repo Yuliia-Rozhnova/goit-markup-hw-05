@@ -309,7 +309,7 @@ ul {
   align-items: center;
   justify-content: center;
 
-  max-width: 270p;
+  max-width: 270px;
   min-height: 120px;
   margin-bottom: 30px;
   background-color: var(--secondary-bg-color);

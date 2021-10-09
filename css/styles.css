@@ -300,17 +300,11 @@ ul {
   align-items: center;
   justify-content: center;
 
-  max-width: 270p;
+  max-width: 270px;
   min-height: 120px;
   margin-bottom: 30px;
   background-color: var(--secondary-bg-color);
   border-radius: 4px;
-  border: 1px solid transparent;
-
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.icons-item:hover {
-  border: 1px solid var(--accent-color);
 }
 
 .feature-icon {

@@ -577,6 +577,7 @@ ul {
 
 .backdrop {
   position: fixed;
+  top: 0;
 
   width: 100vw;
   height: 100vh;
@@ -604,6 +605,7 @@ ul {
 .modal {
   position: relative;
 
+  top: 221px 536px;
   width: 528px;
   min-height: 581px;
   background-color: var(--basic-bg-color);

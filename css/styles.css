@@ -127,6 +127,7 @@ ul {
 
 .logo-bottom {
   margin-right: 0;
+  margin-bottom: 20px;
 }
 
 .header-item:not(:last-child) {
@@ -164,6 +165,12 @@ ul {
 
 .site-nav .link:hover::after {
   opacity: 1;
+}
+
+.site-nav .link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -718,7 +725,8 @@ ul {
   margin-top: var(--card-set-marg);
 }
 
-.card-set:hover .text-overlay {
+.link-portfolio:hover .text-overlay,
+.link-portfolio:focus .text-overlay {
   transform: translate(0);
 }
 
